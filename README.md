@@ -1,13 +1,12 @@
 # Projeto Supermarket Sales
 
-Projeto de análise de vendas desenvolvido com **Python, Pandas, PostgreSQL, SQL e visualização de dados** a partir do dataset `SuperMarket Analysis.csv`.
+Projeto de análise de vendas desenvolvido com Python, Pandas, PostgreSQL, SQL e visualização de dados a partir do dataset `SuperMarket Analysis.csv`.
 
 ## Dashboard Executivo
 
-[Dashboard Executivo](resultados/dashboard_vendas_executivo.png)
+![Dashboard Executivo](resultados/dashboard_vendas_executivo.png)
 
 O dashboard apresenta os principais indicadores e resultados da análise das vendas, permitindo uma visão geral do desempenho por período, filial, linha de produto e demais dimensões analisadas.
-
 
 ## Objetivo
 
@@ -23,7 +22,7 @@ Realizar inspeção, tratamento, validação, análise estatística e análise d
 - OpenPyXL
 - Git/GitHub
 
-## Fluxo
+## Fluxo do projeto
 
 `CSV → RAW → validação/ETL → CLEAN → SQL → Python → estatística → visualização → relatório`
 
@@ -42,23 +41,23 @@ Realizar inspeção, tratamento, validação, análise estatística e análise d
 
 | Pergunta | Resultado |
 |---|---|
-| Maior faturamento por filial | **Giza — 110.568,71** |
-| Maior quantidade de vendas | **Alex — 340 vendas** |
-| Maior faturamento por produto | **Food and beverages — 56.144,84** |
-| Melhor avaliação média | **Food and beverages — 7,11** |
-| Meio de pagamento mais utilizado | **E-wallet — 345 vendas (34,50%)** |
-| Valor médio das vendas | **322,97** |
-| Maior venda | **1.042,65** |
-| Dia com mais vendas | **Sábado — 164 vendas** |
+| Maior faturamento por filial | Giza — 110.568,71 |
+| Maior quantidade de vendas | Alex — 340 vendas |
+| Maior faturamento por produto | Food and beverages — 56.144,84 |
+| Melhor avaliação média | Food and beverages — 7,11 |
+| Meio de pagamento mais utilizado | E-wallet — 345 vendas (34,50%) |
+| Valor médio das vendas | 322,97 |
+| Maior venda | 1.042,65 |
+| Dia com mais vendas | Sábado — 164 vendas |
 
 ### Indicadores gerais
 
-- Total de vendas: **1.000**
-- Faturamento total: **322.966,75**
-- Gross income total: **15.379,37**
-- Ticket médio: **322,97**
-- Mediana das vendas: **253,85**
-- Desvio padrão das vendas: **245,89**
+- Total de vendas: 1.000
+- Faturamento total: 322.966,75
+- Gross income total: 15.379,37
+- Ticket médio: 322,97
+- Mediana das vendas: 253,85
+- Desvio padrão das vendas: 245,89
 
 ## Tratamento e validação
 
@@ -66,23 +65,26 @@ A base original foi preservada na camada `data/raw`.
 
 Foram validados:
 
-- valores nulos;
-- quantidades;
-- preços unitários;
-- impostos;
-- faturamento;
-- custo de mercadorias;
-- margem;
-- gross income;
-- avaliações;
-- duplicidades.
+- valores nulos
+- quantidades
+- preços unitários
+- impostos
+- faturamento
+- custo de mercadorias
+- margem
+- gross income
+- avaliações
+- duplicidades
 
-Na base analisada não foram encontrados problemas que exigissem substituição de valores. O ETL realiza a conversão dos campos de data e hora e acrescenta variáveis temporais para análise.
+Na base analisada não foram encontrados problemas que exigissem substituição de valores.
 
-## Estrutura
+O ETL realiza a conversão dos campos de data e hora e acrescenta variáveis temporais para análise.
+
+## Estrutura do projeto
 
 ```text
 projeto_supermarket_sales_final/
+
 ├── data/
 ├── src/
 │   ├── 01_leitura_dados.py
@@ -123,6 +125,18 @@ As consultas PostgreSQL estão em `sql/02_analise.sql`.
 
 ## Observação metodológica
 
-No dataset original, a coluna de faturamento é `Sales`. Ela não deve ser confundida com `gross income`: `gross income` representa uma medida diferente e não deve ser usada como sinônimo de faturamento.
+No dataset original, a coluna de faturamento é `Sales`.
 
-Os resultados apresentados neste README foram calculados a partir do dataset SuperMarket Analysis.csv utilizado localmente no projeto. Os arquivos de dados brutos e processados não são versionados no repositório.
+Ela não deve ser confundida com `gross income`: `gross income` representa uma medida diferente e não deve ser usada como sinônimo de faturamento.
+
+Os resultados apresentados neste README foram calculados a partir do dataset `SuperMarket Analysis.csv` utilizado localmente no projeto.
+
+Os arquivos de dados brutos e processados não são versionados no repositório.
+
+---
+
+## Sobre o projeto
+
+Este projeto foi desenvolvido como parte da formação em Análise de Dados, com foco na aplicação prática de conceitos de análise, tratamento, validação, SQL, Python, estatística e visualização de dados.
+
+O objetivo foi construir um fluxo completo de análise de dados, desde a leitura e preparação da base até a geração de indicadores, visualizações e relatório final.
