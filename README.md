@@ -8,7 +8,7 @@ Realizar inspeção, tratamento, validação, análise estatística e análise d
 
 ## Tecnologias
 
-- Python 3.14.3
+- Python 3.12
 - Pandas
 - NumPy
 - Matplotlib
@@ -39,7 +39,7 @@ Realizar inspeção, tratamento, validação, análise estatística e análise d
 | Maior quantidade de vendas | **Alex — 340 vendas** |
 | Maior faturamento por produto | **Food and beverages — 56.144,84** |
 | Melhor avaliação média | **Food and beverages — 7,11** |
-| Meio de pagamento mais utilizado | **Ewallet — 345 vendas (34,50%)** |
+| Meio de pagamento mais utilizado | **E-wallet — 345 vendas (34,50%)** |
 | Valor médio das vendas | **322,97** |
 | Maior venda | **1.042,65** |
 | Dia com mais vendas | **Sábado — 164 vendas** |
@@ -76,14 +76,22 @@ Na base analisada não foram encontrados problemas que exigissem substituição 
 
 ```text
 projeto_supermarket_sales_final/
+├── data/
 ├── src/
+│   ├── 01_leitura_dados.py
 │   ├── 02_etl_vendas.py
+│   ├── 03_estatistica_vendas.py
 │   ├── 04_analise_vendas.py
 │   ├── 05_exportar_relatorio.py
 │   └── 06_dashboard_vendas.py
 ├── sql/
-│   └── 02_analise.sql
+│   ├── 01_validacao.sql
+│   ├── 02_analise.sql
+│   └── 03_tratamento_validacao.sql
 ├── resultados/
+│   ├── estatisticas/
+│   ├── graficos/
+│   ├── dashboard_vendas_executivo.png
 │   └── relatorio_vendas_final.xlsx
 ├── .gitignore
 ├── AUDITORIA_FINAL.md
@@ -110,4 +118,4 @@ As consultas PostgreSQL estão em `sql/02_analise.sql`.
 
 No dataset original, a coluna de faturamento é `Sales`. Ela não deve ser confundida com `gross income`: `gross income` representa uma medida diferente e não deve ser usada como sinônimo de faturamento.
 
-Os valores apresentados neste README foram recalculados diretamente a partir do `SuperMarket Analysis.csv` incluído neste projeto.
+Os resultados apresentados neste README foram calculados a partir do dataset SuperMarket Analysis.csv utilizado localmente no projeto. Os arquivos de dados brutos e processados não são versionados no repositório.
