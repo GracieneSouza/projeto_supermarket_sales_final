@@ -2,6 +2,13 @@
 
 Projeto de análise de vendas desenvolvido com **Python, Pandas, PostgreSQL, SQL e visualização de dados** a partir do dataset `SuperMarket Analysis.csv`.
 
+## Dashboard Executivo
+
+[Dashboard Executivo](resultados/dashboard_vendas_executivo.png)
+
+O dashboard apresenta os principais indicadores e resultados da análise das vendas, permitindo uma visão geral do desempenho por período, filial, linha de produto e demais dimensões analisadas.
+
+
 ## Objetivo
 
 Realizar inspeção, tratamento, validação, análise estatística e análise de negócio de 1.000 vendas de uma rede de supermercados, respondendo oito perguntas definidas para o projeto.
