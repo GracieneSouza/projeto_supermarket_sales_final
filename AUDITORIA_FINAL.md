@@ -1,5 +1,3 @@
-# Auditoria final — Projeto Supermarket Sales
-
 ## O que foi encontrado no pacote enviado
 
 O projeto estava funcional, mas havia pontos importantes de consistência que precisavam de correção:

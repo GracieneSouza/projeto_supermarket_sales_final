@@ -75,30 +75,20 @@ Na base analisada não foram encontrados problemas que exigissem substituição 
 ## Estrutura
 
 ```text
-projeto_supermarket_sales/
-├── data/
-│   ├── raw/
-│   │   └── SuperMarket Analysis.csv
-│   └── processed/
-│       └── supermarket_sales_clean.csv
-├── sql/
-│   ├── 01_validacao.sql
-│   ├── 02_analise.sql
-│   └── 03_tratamento_validacao.sql
+projeto_supermarket_sales_final/
 ├── src/
-│   ├── 01_leitura_dados.py
 │   ├── 02_etl_vendas.py
-│   ├── 03_estatistica_vendas.py
 │   ├── 04_analise_vendas.py
 │   ├── 05_exportar_relatorio.py
 │   └── 06_dashboard_vendas.py
+├── sql/
+│   └── 02_analise.sql
 ├── resultados/
-│   ├── estatisticas/
-│   ├── graficos/
 │   └── relatorio_vendas_final.xlsx
+├── .gitignore
+├── AUDITORIA_FINAL.md
 ├── README.md
-├── requirements.txt
-└── .gitignore
+└── requirements.txt
 ```
 
 ## Execução
